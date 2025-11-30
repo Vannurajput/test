@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- history/index.html: popup for recently visited pages -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="history-shell">
+      <div class="history-header">
+        <div class="history-title">
+          <span>History</span>
+          <button id="clearHistory" class="clear-btn" aria-label="Clear history">Clear</button>
+        </div>
+        <button id="historyClose" aria-label="Close">&times;</button>
+      </div>
+      <div id="historyList" class="history-list"></div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

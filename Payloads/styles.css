@@ -1,0 +1,101 @@
+/* history/styles.css - styling for the history popup */
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1f1f23;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+.history-shell {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(18px);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(15, 17, 26, 0.22);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.clear-btn {
+  border: none;
+  background: rgba(125, 164, 255, 0.15);
+  color: #3c63c8;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.history-header button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 6px;
+  color: #7a7a84;
+}
+
+.history-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-entry {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: left;
+  background: #f9fafc;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.history-entry:hover {
+  border-color: #7da4ff;
+  background: #ffffff;
+}
+
+.history-entry-title {
+  font-size: 13px;
+  color: #21222b;
+  margin-bottom: 4px;
+}
+
+.history-entry-url {
+  font-size: 12px;
+  color: #6f7585;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 24px 0;
+  color: #7f8496;
+  font-size: 13px;
+}
